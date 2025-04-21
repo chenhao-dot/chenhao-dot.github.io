@@ -1,0 +1,130 @@
+以下是美化后的代码，优化了代码结构、样式细节和视觉体验：
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重庆市捷坤能源开发有限公司 - 服务报价</title>
+    <style>
+        /* 基础样式 */
+        :root {
+            --primary-color: #2c3e50;   /* 主色 - 深蓝 */
+            --price-color: #e74c3c;    /* 价格色 - 橙红 */
+            --link-color: #3498db;     /* 链接色 - 蓝 */
+            --border-color: #eee;      /* 边框色 */
+            --font-family: "PingFang SC", "Helvetica Neue", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--font-family);
+        }
+
+        body {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f8f9fa; /* 浅灰背景 */
+        }
+
+        /* 头部样式 */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--primary-color); /* 深蓝底框 */
+        }
+
+        .title {
+            font-size: 1.8rem; /* 增大标题字号 */
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        /* 信息列表样式 */
+        .info-list {
+            background: #ffffff; /* 白色卡片 */
+            border-radius: 10px; /* 圆角 */
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* 轻微阴影 */
+        }
+
+        .info-list li {
+            padding: 15px 0;
+            border-bottom: 1px dashed var(--border-color); /* 虚线边框 */
+            display: flex;
+            justify-content: space-between; /* 两端对齐 */
+        }
+
+        .info-list li:last-child {
+            border-bottom: none; /* 最后一项去边框 */
+        }
+
+        .price {
+            color: var(--price-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* 联系方式样式 */
+        .contact {
+            margin-top: 40px;
+            padding-top: 30px;
+            text-align: center;
+            border-top: 2px dashed var(--border-color); /* 顶部虚线 */
+        }
+
+        .tel {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .tel:hover {
+            text-decoration: underline; /* 鼠标悬停下划线 */
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">重庆市捷坤能源开发有限公司</h1>
+        <p style="color: #666; font-size: 0.95rem;">专业能源服务 | 高效安全可靠</p > <!-- 新增副标题 -->
+    </div>
+
+    <ul class="info-list">
+        <li>开户上户费 <span class="price">3980 元</span></li>
+        <li>气表费用 <span class="price">380 元</span></li>
+        <li>自闭安全阀 <span class="price">200 元</span></li>
+        <li>总合计 
+            <span class="price" 
+                  style="font-size: 1.3rem; 
+                         font-weight: 800; 
+                         color: var(--primary-color)">
+                4560 元
+            </span>
+        </li>
+        <li style="font-size: 0.9rem; color: #999; text-align: right;">
+            安装完成后另表材料费自付
+        </li>
+    </ul>
+
+    <div class="contact">
+        <p style="font-size: 1.1rem; font-weight: 500; color: var(--primary-color);">
+            24小时服务热线
+        </p >
+        <p>
+            <a class="tel" href=" ">
+                <strong>陈世炳</strong> | 18102362077
+            </a >
+        </p >
+    </div>
+</body>
+</html>
+
